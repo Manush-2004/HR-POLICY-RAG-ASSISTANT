@@ -1,0 +1,29 @@
+# Virtual environments & dependencies
+.venv/
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.py[cod]
+
+# Vector store data
+backend/data/store/*
+!backend/data/store/.gitkeep
+
+# Test & coverage caches
+.pytest_cache/
+.coverage
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
