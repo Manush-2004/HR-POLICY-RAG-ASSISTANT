@@ -18,12 +18,6 @@ router = APIRouter(tags=["HR Assistant"])
     status_code=status.HTTP_200_OK,
     summary="Health check and service status",
 )
-@router.get(
-    "/api/health",
-    response_model=HealthResponse,
-    status_code=status.HTTP_200_OK,
-    include_in_schema=False,
-)
 async def health_check(request: Request) -> HealthResponse:
     """Verify backend availability, document presence, and configuration status."""
     settings = get_settings()

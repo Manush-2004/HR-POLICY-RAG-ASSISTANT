@@ -5,7 +5,7 @@ import pytest
 from langchain_core.documents import Document
 
 from app.schemas.chat import ChatMessage, ChatResponse, SourceReference
-from hr_assistant.pipeline import HRAssistant, ask, build_hr_assistant, reset_hr_assistant
+from hr_assistant.pipeline import HRAssistant, build_hr_assistant, reset_hr_assistant
 
 
 @pytest.fixture(autouse=True)

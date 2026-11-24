@@ -134,11 +134,3 @@ def reset_hr_assistant() -> None:
     global _assistant_instance
     _assistant_instance = None
 
-
-def ask(
-    question: str,
-    history: Optional[List[ChatMessage]] = None,
-) -> ChatResponse:
-    """Convenience functional interface to ask the HR assistant a question."""
-    assistant = get_hr_assistant()
-    return assistant.ask(question, history)

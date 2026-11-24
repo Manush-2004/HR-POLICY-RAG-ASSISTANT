@@ -12,7 +12,6 @@ from hr_assistant.document_loader import DocumentLoaderError, load_pdf
 from hr_assistant.embeddings import get_embeddings
 from hr_assistant.pipeline import (
     HRAssistant,
-    ask,
     build_hr_assistant,
     get_hr_assistant,
     reset_hr_assistant,
@@ -39,7 +38,6 @@ __all__ = [
     "HRAssistant",
     "SYSTEM_PROMPT",
     "Settings",
-    "ask",
     "build_agent",
     "build_gemini_llm",
     "build_hr_assistant",
